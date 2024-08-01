@@ -1,21 +1,22 @@
+/* Common Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #000000;
     margin: 0;
     padding: 0;
     background-size: cover;
     background-image: url('background.jpg');
     background-repeat: no-repeat;
-    transition: background-image 0.5s ease;
+    background-attachment: fixed;
+    transition: background-image 0.5s ease, background-color 0.5s ease, color 0.5s ease;
 }
 
 .container {
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8); /* Light mode default */
 }
 
 h1 {
@@ -23,16 +24,29 @@ h1 {
     font-size: 24px;
 }
 
+.header-image {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
 .total-amount {
     margin-bottom: 20px;
     text-align: center;
+}
+
+.total-amount label {
+    display: block;
+    margin-bottom: 5px; /* Moves label slightly above input */
+    font-weight: bold;
 }
 
 label {
     display: inline-block;
     margin-right: 10px;
     margin-top: 10px;
-    width: px;
 }
 
 input[type="number"],
@@ -72,7 +86,7 @@ button:hover {
 .person {
     padding-bottom: 10px;
     margin-bottom: 10px;
-    border-bottom: 1px solid #ccc; /* Adds a light line separator */
+    border-bottom: 1px solid #ddd; /* Reduces the thickness of the separator line */
 }
 
 #results {
@@ -92,5 +106,36 @@ button:hover {
 
     .points-group input {
         width: 100%;
+    }
+}
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+    
+    .container {
+        background-color: rgba(50, 50, 50, 0.8);
+    }
+    
+    input[type="number"],
+    input[type="text"],
+    input[type="file"] {
+        background-color: #333;
+        color: #e0e0e0;
+    }
+    
+    button {
+        background-color: #1a73e8;
+    }
+
+    button:hover {
+        background-color: #135aba;
+    }
+
+    .person {
+        border-bottom: 1px solid #555; /* Adjusts separator color for dark mode */
     }
 }
