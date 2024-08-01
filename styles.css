@@ -28,10 +28,9 @@ h1 {
 
 .header-image {
     display: block;
-    margin: 10px auto;
-    width: 100%;
-    max-width: 300px;
-    height: auto;
+    width: 100%; /* Stretches the image to fill the container's width */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 8px; /* Matches the container's border-radius */
 }
 
 .total-amount {
