@@ -8,8 +8,10 @@ document.getElementById('addPerson').addEventListener('click', function() {
     newPerson.innerHTML = `
         <label for="name-${personCount}">Name:</label>
         <input type="text" id="name-${personCount}" value="Person ${personCount + 1}">
-        <label for="points-${personCount}">Points:</label>
-        <input type="number" id="points-${personCount}" value="1">
+        <div class="points-group">
+            <label for="points-${personCount}">Points:</label>
+            <input type="number" id="points-${personCount}" value="1">
+        </div>
     `;
     
     peopleDiv.appendChild(newPerson);
