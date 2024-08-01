@@ -18,6 +18,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: rgba(255, 255, 255, 0.8); /* Light mode default */
     overflow: hidden; /* Ensures content stays within the borders */
+    position: relative;
 }
 
 h1 {
@@ -27,7 +28,6 @@ h1 {
 
 .header-image {
     display: block;
-    margin: 10px auto;
     width: 100%; /* Stretches the image to fill the container's width */
     height: auto; /* Maintains the aspect ratio */
     border-radius: 8px; /* Matches the container's border-radius */
