@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribution Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <div class="container">
+        <h1>Money Distribution Calculator</h1>
+        <div class="total-amount">
+            <label for="total" class="above-label">Total Amount:</label>
+            <input type="number" id="total" placeholder="Enter total amount">
+        </div>
+        <div id="people">
+            <div class="person">
+                <label for="name-0">Name:</label>
+                <input type="text" id="name-0" value="Person 1">
+                <div class="points-group">
+                    <label for="points-0">Points:</label>
+                    <input type="number" id="points-0" value="1">
+                </div>
+            </div>
+        </div>
+        <button id="addPerson">Add Person</button>
+        <button id="calculate">Calculate</button>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

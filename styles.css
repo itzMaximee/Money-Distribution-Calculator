@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    transition: background-image 0.5s ease;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.total-amount {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: px;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="file"] {
+    width: calc(100% - 10px);
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.points-group {
+    display: flex;
+    align-items: center;
+}
+
+.points-group label, .points-group input {
+    margin: 1px;
+    padding: 5px;
+}
+
+button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.person {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc; /* Adds a light line separator */
+}
+
+#results {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    label, input[type="number"], input[type="text"], input[type="file"] {
+        width: 100%;
+    }
+
+    .points-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .points-group input {
+        width: 100%;
+    }
+}
