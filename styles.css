@@ -28,8 +28,8 @@ h1 {
 .header-image {
     display: block;
     margin: 10px auto;
-    width: 100%; /* Ensures the image takes the full width of the container */
-    max-width: 300px;
+    width: 80%; /* Ensures the image takes up 80% of the container's width */
+    max-width: 150px; /* Sets a maximum width to ensure it doesn't get too large */
     height: auto;
     border-radius: 8px; /* Matches the container's border-radius */
 }
