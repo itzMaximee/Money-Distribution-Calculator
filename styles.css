@@ -17,6 +17,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: rgba(255, 255, 255, 0.8); /* Light mode default */
+    overflow: hidden; /* Ensures content stays within the borders */
 }
 
 h1 {
@@ -27,9 +28,10 @@ h1 {
 .header-image {
     display: block;
     margin: 10px auto;
-    width: 100%;
+    width: 100%; /* Ensures the image takes the full width of the container */
     max-width: 300px;
     height: auto;
+    border-radius: 8px; /* Matches the container's border-radius */
 }
 
 .total-amount {
